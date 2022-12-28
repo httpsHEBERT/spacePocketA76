@@ -13,7 +13,7 @@ export default class Menu extends Component{
                         <Text style={styles.title}>Space Pocket</Text>
                     </View>
                     <TouchableOpacity style={styles.pressHere}
-                                      onPress={() => this.prop.navigation.navigate("ISSLocation")}>
+                                      onPress={() => this.props.navigation.navigate("ISSLocation")}>
                         <Text style={styles.h1}>ISS Location</Text>
                         <Text style={styles.number}>1</Text>
                         <Text style={styles.h3}>{"More info --->"}</Text>
@@ -21,7 +21,7 @@ export default class Menu extends Component{
                                source={require("../assets/iss_icon.png")}/>
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.pressHere}
-                                      onPress={() => this.prop.navigation.navigate("Info")}>
+                                      onPress={() => this.props.navigation.navigate("Info")}>
                         <Text style={styles.h1}>Meteors</Text>
                         <Text style={styles.number}>2</Text>
                         <Text style={styles.h3}>{"More info --->"}</Text>
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
     }, 
     h2: {
         paddingLeft: 30,
-        color: "orange",
+        color: "#FFA500",
         fontSize: 15
     },
     icon: {
