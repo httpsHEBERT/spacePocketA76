@@ -43,9 +43,7 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         color: "#fff"
     },
-    emptyArea: {
-        marginTop: Platform.OS === "android" ? StatusBar.currentHeight : 0 
-    },
+    
     titlePosition: {
         flex: 0.15,
         justifyContent: "center",
